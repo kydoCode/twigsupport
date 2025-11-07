@@ -46,7 +46,7 @@ Structure de base :
       </a>
       <nav>
         <ul>
-          <li><a href="home_static.html"></a></li>
+          <li><a href="home_static.html">Accueil</a></li>
           <li><a href="about_static.html">À propos</a></li>
         </ul>
       </nav>
