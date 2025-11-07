@@ -79,9 +79,18 @@ Créer `templates/base.html.twig` :
   <link rel="stylesheet" href="{{ asset('style.css') }}">
 </head>
 <body>
-  {% block header %}
+  
+   {% block header %}
     <header>
-      <h1>Mon site de base</h1>
+      <a href="/">
+        <img src="{{ asset('images/logo.png') }}" alt="Logo du site">
+      </a>
+      <nav>
+        <ul>
+          <li><a href="/home_static.html">Accueil</a></li>
+          <li><a href="/about_static.html">À propos</a></li>
+        </ul>
+      </nav>
     </header>
   {% endblock %}
 
@@ -152,7 +161,7 @@ Créer `templates/admin/layout.html.twig` :
 
 {% block header %}
   {{ parent() }}
-  <nav>Section admin</nav>
+  <nav class="admin-nav">Section admin</nav>
 {% endblock %}
 
 {% block body %}
